@@ -2,3 +2,61 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.body-content{
+    /** Essa margem vai evitar que o conteudo fique por baixo do rodapé **/
+    margin-bottom: 40px;
+}
+
+header{
+    height: 15vh; /*altura => viewport*/
+    background-color: blue;
+    display: flex;
+    /* flex-direction: row; (padrão) */
+    justify-content: space-between;
+    align-items: center;
+}
+
+main{
+    min-height: 100vh;
+    background-color: lightgray;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+article{
+    width: 400px;
+}
+
+footer{
+    background-color: brown;
+}
+
+figure{
+    width: 300px;
+}
+
+img{
+    height: 160px;
+    width: 160px;
+}
+
+footer.fixar-rodape{
+    border-top: 1px solid #333;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+  }
